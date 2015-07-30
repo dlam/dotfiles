@@ -10,6 +10,7 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
-" Highlight trailing whitespace
+" Highlight and automatically remove trailing whitespace
 hi ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+autocmd BufWritePre * :%s/\s\+$//e
