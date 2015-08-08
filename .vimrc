@@ -2,6 +2,9 @@
 syntax enable
 colorscheme monokai
 
+" Syntax highlighting for JSON
+autocmd BufNewFile,BufRead *.json set ft=javascript
+
 " Line numbers
 set number
 
