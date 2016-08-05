@@ -7,3 +7,4 @@ set __fish_git_prompt_showdirtystate true
 set __fish_git_prompt_char_dirtystate '*'
 set __fish_git_prompt_char_stagedstate ''
 set __fish_git_prompt_char_invalidstate ''
+
