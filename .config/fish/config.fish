@@ -58,6 +58,13 @@ set __fish_git_prompt_char_cleanstate '='
 #############################
 set -Ux LS_COLORS 'ow=96'
 
+#############################
+# MAC OSX
+#############################
+
+# $PATH		
+# set -x PATH "/Users/dustinlam/Library/Android/sdk/platform-tools" $PATH
+
 function fish_prompt
   set last_status $status
 
