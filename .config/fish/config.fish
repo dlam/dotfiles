@@ -5,6 +5,7 @@
 # set -Ux LS_COLORS 'ow=96'
 
 # Android
+
 # set -x JAVA_HOME '/usr/lib/jvm/java-7-openjdk-amd64'
 # set -x GRADLE_USER_HOME '~/.gradle/'
 
