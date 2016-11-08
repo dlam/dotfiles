@@ -5,6 +5,9 @@ colorscheme monokai
 " Syntax highlighting for JSON
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
+" Syntax highlighting for TypeScript
+autocmd BufNewFile,BufRead *.ts set ft=javascript
+
 " Syntax highlighting for Markdown
 autocmd BufNewFile,BufRead *.md set ft=markdown
 
