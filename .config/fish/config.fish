@@ -15,6 +15,10 @@
 
 # $PATH
 # set -x PATH "/Users/dustinlam/Library/Android/sdk/platform-tools" $PATH
+# set -x PATH "/Users/dustinlam/Library/Android/sdk/tools" $PATH
+
+# JVM
+set JAVA_HOME "/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home"
 
 #############################
 # COLOURS
@@ -24,7 +28,7 @@
 
 set fish_color_normal                 normal           # the default color
 set fish_color_command                blue             # the color for commands
-# fish_color_quote, the color for quoted blocks of text
+set fish_color_quote                  yellow           # the color for quoted blocks of text
 # fish_color_redirection, the color for IO redirections
 # fish_color_end, the color for process separators like ';' and '&'
 set fish_color_error                  red              # the color used to highlight potential errors
@@ -62,7 +66,7 @@ set __fish_git_prompt_color_branch    yellow           # Branch name
 #############################
 
 # Git prompt
-# set __fish_git_prompt_showdirtystate true
+set __fish_git_prompt_showdirtystate true
 
 # Status Chars
 set __fish_git_prompt_char_dirtystate      '*'
