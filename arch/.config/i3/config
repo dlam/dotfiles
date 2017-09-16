@@ -143,3 +143,5 @@ bar {
     background $NEVADA
   }
 }
+
+focus_follows_mouse no
