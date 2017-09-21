@@ -31,7 +31,7 @@ set $NEVADA    "#5E6F76"
 # Window Settings
 font pango:Sk-Modernist 10
 for_window [class="^.*"] border normal 0
-for_window [class="^.*"] title_format "<span font='Sk-Modernist 10'> > %title</span>"
+for_window [class="^.*"] title_format "<span font='Sk-Modernist 10'>%title</span>"
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -45,6 +45,9 @@ bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
+
+# lock screen
+bindsym $mod+l exec i3lock -e
 
 # change focus
 bindsym $mod+Left focus left
