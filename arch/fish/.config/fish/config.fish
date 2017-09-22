@@ -104,3 +104,6 @@ function fish_prompt
   set_color normal
 end
 
+function fish_greeting
+  cowthink (fortune -a)
+end
