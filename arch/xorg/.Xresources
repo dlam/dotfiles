@@ -9,7 +9,7 @@ Xft.lcdfilter:  lcddefault
 ! urxvt
 urxvt.cursorBlink:     1
 urxvt.cursorUnderline: 1
-urxvt.font:            xft:Input Mono:size=8:style=regular
+urxvt.font:            xft:Sk-Modernist:size=8:style=mono
 urxvt.letterSpace:     0
 urxvt.scrollBar:       false
 urxvt.internalBorder:  0
