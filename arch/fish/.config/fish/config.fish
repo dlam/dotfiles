@@ -37,20 +37,20 @@ set -x ANDROID_HOME /opt/android-sdk
 
 # Highlighting
 
-set fish_color_normal                 normal           # the default color
-set fish_color_command                blue             # the color for commands
-set fish_color_quote                  yellow           # the color for quoted blocks of text
+set fish_color_normal                 normal              # the default color
+set fish_color_command                blue                # the color for commands
+set fish_color_quote                  yellow              # the color for quoted blocks of text
 # fish_color_redirection, the color for IO redirections
 # fish_color_end, the color for process separators like ';' and '&'
-set fish_color_error                  red              # the color used to highlight potential errors
+set fish_color_error                  red                 # the color used to highlight potential errors
 # fish_color_param, the color for regular command parameters
 # fish_color_comment, the color used for code comments
 # fish_color_match, the color used to highlight matching parenthesis
-set fish_color_search_match           --background=red # the color used to highlight history search matches
+set fish_color_search_match           --background=brgrey # the color used to highlight history search matches
 # fish_color_operator, the color for parameter expansion operators like '*' and '~'
 # fish_color_escape, the color used to highlight character escapes like '\n' and '\x70'
-set fish_color_cwd                    green            # the color used for the current working directory in the default prompt
-set fish_color_autosuggestion         brgrey           # the color used for autosuggestions
+set fish_color_cwd                    green               # the color used for the current working directory in the default prompt
+set fish_color_autosuggestion         brgrey              # the color used for autosuggestions
 # fish_color_user, the color used to print the current username in some of fish default prompts
 # fish_color_host, the color used to print the current host system in some of fish default prompts
 
@@ -103,6 +103,10 @@ function fish_prompt
 
   set_color normal
 end
+
+#############################
+# GREETING
+#############################
 
 function fish_greeting
   cowthink (fortune -a)
