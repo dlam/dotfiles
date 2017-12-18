@@ -1,7 +1,7 @@
 #! /bin/bash
 
 xset m 1/1
-xset r rate 170 30
+xset r rate 170 50
 xrdb "$HOME/.Xresources"
 ~/.fehbg &
 
