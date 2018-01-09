@@ -24,6 +24,8 @@
 # ARCH LINUX
 #############################
 
+set -x EDITOR "/usr/bin/vim"
+
 # $PATH
 set -x PATH "/opt/android-sdk/tools/bin" $PATH
 
