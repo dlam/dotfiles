@@ -14,7 +14,7 @@ urxvt.font:            xft:Sk-Modernist:size=8:style=mono
 urxvt.letterSpace:     0
 urxvt.scrollBar:       false
 urxvt.internalBorder:  0
-urxvt.transparent:     true
+urxvt.transparent:     false
 urxvt.shading:         10
 
 ! Colors
