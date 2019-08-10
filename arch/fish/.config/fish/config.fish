@@ -119,3 +119,19 @@ end
 # function fish_greeting
 #   cowthink (fortune -a)
 # end
+
+#############################
+# EDIT CMDLINE
+#############################
+
+function edit_cmd --description 'Edit cmdline in editor'
+    set -l f (mktemp --tmpdir=.)
+    set -l p (commandline -C)
+    commandline -b > $f
+    vim -c set\ ft=fish $f
+    commandline -r (more $f)
+    commandline -C $p
+    rm $f
+end
+
+bind \cx edit_cmd
