@@ -2,7 +2,7 @@
 Manage using Stow
 `stow <package_name> -t ~`
 
-# Arch
+## Arch
  - xorg
  - i3
  - urxvt
