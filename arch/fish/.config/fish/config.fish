@@ -27,7 +27,7 @@
 set -x EDITOR "/usr/bin/vim"
 
 # $PATH
-# set -x PATH "/opt/android-sdk/tools/bin" $PATH
+set -x PATH "/home/dustin/Android/Sdk/platform-tools" $PATH
 
 # Android
 # set -x JAVA_HOME    /usr/lib/jvm/java-8-openjdk
