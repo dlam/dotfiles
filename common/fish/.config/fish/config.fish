@@ -2,13 +2,13 @@
 # WSL
 #############################
 
-set -x EDITOR "/usr/bin/vim"
+# set -x EDITOR "/usr/bin/vim"
 
 # Android
-set -x ANDROID_HOME "/home/dustin/Android/Sdk"
-set -x PATH "/home/dustin/Android/Sdk/cmdline-tools/tools/bin" $PATH
-set -x PATH "/home/dustin/Android/Sdk/tools" $PATH
-set -x PATH "/home/dustin/Android/Sdk/platform-tools" $PATH
+# set -x ANDROID_HOME "/home/dustin/Android/Sdk"
+# set -x PATH "/home/dustin/Android/Sdk/cmdline-tools/tools/bin" $PATH
+# set -x PATH "/home/dustin/Android/Sdk/tools" $PATH
+# set -x PATH "/home/dustin/Android/Sdk/platform-tools" $PATH
 
 #############################
 # MAC OSX
