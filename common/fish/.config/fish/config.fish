@@ -25,14 +25,16 @@
 # ARCH LINUX
 #############################
 
-# set -x EDITOR "/usr/bin/vim"
+set -x EDITOR "/usr/bin/vim"
 
 # $PATH
-# set -x PATH "/home/dustin/Android/Sdk/platform-tools" $PATH
+set -x PATH "/snap/bin" $PATH
 
 # Android
-# set -x JAVA_HOME    /usr/lib/jvm/java-8-openjdk
-# set -x ANDROID_HOME /opt/android-sdk
+set -x ANDROID_HOME "$HOME/Android/Sdk"
+set -x PATH "$HOME/Android/Sdk/cmdline-tools/tools/bin" $PATH
+set -x PATH "$HOME/Android/Sdk/tools" $PATH
+set -x PATH "$HOME/Android/Sdk/platform-tools" $PATH
 
 #############################
 # COLOURS
