@@ -26,6 +26,7 @@
 #############################
 
 set -x EDITOR "/usr/bin/vim"
+set -x GPG_TTY "/usr/bin/tty"
 
 # $PATH
 set -x PATH "/snap/bin" $PATH

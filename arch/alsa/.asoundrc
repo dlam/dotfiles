@@ -1,0 +1,10 @@
+pcm.!default {
+  type hw
+  card "Multibit"
+}
+
+ctl.!default {
+  type hw
+  card "Multibit"
+}
+
