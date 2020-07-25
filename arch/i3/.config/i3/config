@@ -29,9 +29,9 @@ set $RIVER_BED "#455860"
 set $NEVADA    "#5E6F76"
 
 # Window Settings
-font pango:Sk-Modernist 10
+font pango:DejaVu Sans 0
 for_window [class="^.*"] border normal 0
-for_window [class="^.*"] title_format "<span font='Sk-Modernist 10'>%title</span>"
+for_window [class="^.*"] title_format "<span font='DejaVu Sans 0'>%title</span>"
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -142,15 +142,8 @@ client.unfocused        $RIVER_BED $RIVER_BED $fg  $RIVER_BED $RIVER_BED
 client.urgent           $RIVER_BED $RIVER_BED $fg  $RIVER_BED $RIVER_BED
 client.placeholder      $RIVER_BED $RIVER_BED $fg  $RIVER_BED $RIVER_BED
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-  status_command i3status
-  position       top
-
-  colors {
-    background $NEVADA
-  }
-}
-
 focus_follows_mouse no
+
+# Start polybar
+# exec_always --no-startup-id ~/.config/polybar/launch.sh &
+
