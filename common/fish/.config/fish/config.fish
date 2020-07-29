@@ -99,7 +99,6 @@ set __fish_git_prompt_char_cleanstate      '='
 # STARTUP
 #############################
 
-start_agent
 
 #############################
 # PROMPT
