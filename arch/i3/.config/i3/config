@@ -143,6 +143,8 @@ client.urgent           $RIVER_BED $RIVER_BED $fg  $RIVER_BED $RIVER_BED
 client.placeholder      $RIVER_BED $RIVER_BED $fg  $RIVER_BED $RIVER_BED
 
 focus_follows_mouse no
+# Disable resize by mouse
+bindsym --border button3 nop
 
 # Start polybar
 # exec_always --no-startup-id ~/.config/polybar/launch.sh &
