@@ -43,8 +43,8 @@ for_window [class="^.*"] title_format "<span font='DejaVu Sans 0'>%title</span>"
 # kill focused window
 bindsym $mod+q kill
 
-# start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+# start rofi (a program launcher)
+bindsym $mod+d exec rofi -show run
 
 # lock screen
 bindsym $mod+l exec i3lock -e -c 000000
