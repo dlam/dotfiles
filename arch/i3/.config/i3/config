@@ -44,7 +44,7 @@ for_window [class="^.*"] title_format "<span font='DejaVu Sans 0'>%title</span>"
 bindsym $mod+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec --no-startup-id rofi -show run
 
 # lock screen
 bindsym $mod+l exec i3lock -e -c 000000
