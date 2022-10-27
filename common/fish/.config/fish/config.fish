@@ -29,8 +29,8 @@ set -x EDITOR "/usr/bin/vim"
 set -x GPG_TTY (tty)
 
 # $PATH
-set -x PATH "/snap/bin" $PATH
-set -x PATH "$HOME/go/bin" $PATH
+# set -x PATH "/snap/bin" $PATH
+# set -x PATH "$HOME/go/bin" $PATH
 
 # Android
 set -x ANDROID_HOME "$HOME/Android/Sdk"
