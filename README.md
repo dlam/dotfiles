@@ -18,7 +18,13 @@ sudo snap install intellij-idea-community --classic
 
 ```
 curl -s "https://get.sdkman.io" | bash
+
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+fisher install acomagu/fish-async-prompt
+fisher install reitzig/sdkman-for-fish@v1.4.0
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 **/etc/default/grub**

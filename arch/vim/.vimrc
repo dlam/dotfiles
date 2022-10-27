@@ -30,20 +30,20 @@ Plug 'pangloss/vim-javascript'
 let g:javascript_plugin_flow = 1
 
 " Codefmt
-Plug 'google/vim-maktaba'
-Plug 'google/vim-codefmt'
+" Plug 'google/vim-maktaba'
+" Plug 'google/vim-codefmt'
 " autocmd FileType javascript let b:codefmt_formatter = 'js-beautify'
-Plug 'google/vim-glaive'
+" Plug 'google/vim-glaive'
 
 " Flow
-Plug 'flowtype/vim-flow'
-let g:flow#autoclose = 1
+" Plug 'flowtype/vim-flow'
+" let g:flow#autoclose = 1
 
 " Initialize plugin system
 call plug#end()
 
 " the glaive#Install() should go after the "call vundle#end()"
-call glaive#Install()
+" call glaive#Install()
 
 set background=dark
 colorscheme PaperColor
