@@ -18,9 +18,6 @@
 # set -x PATH "/Users/dustinlam/Library/Android/sdk/platform-tools" $PATH
 # set -x PATH "/Users/dustinlam/Library/Android/sdk/tools" $PATH
 
-# JVM
-# set JAVA_HOME "/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home"
-
 #############################
 # ARCH LINUX
 #############################
