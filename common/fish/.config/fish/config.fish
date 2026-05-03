@@ -14,16 +14,22 @@
 # MAC OSX
 #############################
 
+set -x EDITOR "/usr/bin/vim"
+
 # $PATH
+
+set -x PATH "$HOME/.local/bin" $PATH
+# Google Cloud SDK.
+if [ -f '/Users/dustinlam/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/dustinlam/Downloads/google-cloud-sdk/path.fish.inc'; end
 # set -x PATH "/Users/dustinlam/Library/Android/sdk/platform-tools" $PATH
 # set -x PATH "/Users/dustinlam/Library/Android/sdk/tools" $PATH
 
 #############################
-# ARCH LINUX
+# LINUX
 #############################
 
-set -x EDITOR "/usr/bin/vim"
-set -x GPG_TTY (tty)
+# set -x EDITOR "/usr/bin/vim"
+# set -x GPG_TTY (tty)
 
 # $PATH
 # set -x PATH "/snap/bin" $PATH
@@ -115,12 +121,23 @@ function fish_prompt
 end
 
 #############################
-# GREETING
+# AUTO NVM USE
 #############################
 
-# function fish_greeting
-#   cowthink (fortune -a)
-# end
+function __check_nvm --on-variable PWD --description 'Call nvm use when .nvmrc exists'
+  if test -f .nvmrc
+    set node_version (node -v)
+    set nvmrc_node_version (nvm list | grep (cat .nvmrc))
+
+    if set -q $nvmrc_node_version
+      nvm install
+    else if string match -q -- "*$node_version" $nvmrc_node_version
+      # already current node version
+    else
+      nvm use
+    end
+  end
+end
 
 #############################
 # EDIT CMDLINE
@@ -137,3 +154,4 @@ function edit_cmd --description 'Edit cmdline in editor'
 end
 
 bind \cx edit_cmd
+
